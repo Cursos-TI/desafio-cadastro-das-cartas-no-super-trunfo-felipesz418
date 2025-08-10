@@ -20,8 +20,11 @@
         printf("Insira o código de duas cartas: \n");
         scanf("%s %s", codigo, codigo2);
 
-        printf("Insira o nome de duas cidades: \n");
-        scanf("%s %s", nomecidade, nomecidade2);
+        printf("Insira o nome da primeira cidade: \n");
+        scanf(" %[^\n]", nomecidade);
+
+        printf("Insira o nome da segunda cidade: \n");
+        scanf(" %[^\n]", nomecidade2);
 
         printf("Insira a população para as duas cartas: \n");
         scanf("%d %d", &habitantes, &habitantes2);
@@ -30,7 +33,7 @@
         scanf("%f %f", &tamanho, &tamanho2);
 
         printf("Insira o PIB para as duas cartas: \n");
-        scanf("%f %F", &pib, &pib2);
+        scanf("%f %f", &pib, &pib2);
 
         printf("Insira o número de pontos turisticos de duas cidades: \n");
         scanf("%d %d", &pontosturisticos, &pontosturisticos2);
@@ -48,9 +51,9 @@
 
             printf("População: %d \n", habitantes);
 
-            printf("Área: %f \n", tamanho);
+            printf("Área: %.2f \n", tamanho);
 
-            printf("PIB: %f \n", pib);
+            printf("PIB: %.2f \n", pib);
 
             printf("Numero de pontos turisticos: %d \n", pontosturisticos);
 
@@ -68,9 +71,9 @@
 
             printf("População: %d \n", habitantes2);
 
-            printf("Área: %f \n", tamanho2);
+            printf("Área: %.2f \n", tamanho2);
 
-            printf("PIB: %f \n", pib2);
+            printf("PIB: %.2f \n", pib2);
 
             printf("Número de pontos turisticos: %d \n", pontosturisticos2);
 
