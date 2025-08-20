@@ -9,6 +9,9 @@
         float tamanho, tamanho2;
         float pib, pib2;
         int pontosturisticos, pontosturisticos2;
+        float densidade, densidade2;
+        float pibpercapt, pibpercapt2;
+
 
 
         //inserção de dados para as duas cartas
@@ -38,6 +41,14 @@
         printf("Insira o número de pontos turisticos de duas cidades: \n");
         scanf("%d %d", &pontosturisticos, &pontosturisticos2);
 
+        densidade = (float) habitantes / tamanho;
+        pibpercapt = (float) pib / habitantes;
+
+        densidade2 = (float) habitantes2 / tamanho2;
+        pibpercapt2 = (float) pib2 / habitantes2;
+
+
+
 
 
             //Valores para imprimir dados: Carta 01
@@ -56,6 +67,10 @@
             printf("PIB: %.2f \n", pib);
 
             printf("Numero de pontos turisticos: %d \n", pontosturisticos);
+
+            printf("Densidade populacional: %.2f \n", densidade);
+
+            printf("PIB per capita: %.2f \n", pibpercapt);
 
 
 
@@ -76,6 +91,10 @@
             printf("PIB: %.2f \n", pib2);
 
             printf("Número de pontos turisticos: %d \n", pontosturisticos2);
+
+            printf("Densidade populacional: %.2f \n", densidade2);
+
+            printf("PIB per capita: %.2f \n", pibpercapt2);
 
 
         
