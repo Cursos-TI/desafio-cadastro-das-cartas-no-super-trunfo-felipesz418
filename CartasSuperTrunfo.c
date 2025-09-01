@@ -11,6 +11,7 @@
         int pontosturisticos, pontosturisticos2;
         float densidade, densidade2;
         float pibpercapt, pibpercapt2;
+        float superPoder, superPoder2;
 
 
 
@@ -95,6 +96,26 @@
             printf("Densidade populacional: %.2f \n", densidade2);
 
             printf("PIB per capita: %.2f \n", pibpercapt2);
+
+            //superPoder, soma de todas os valores numericos
+
+            superPoder = (float) (pontosturisticos + pib + tamanho + densidade + pibpercapt);
+            printf("O SuperPoder da primeira carta é: %.2f \n", superPoder);
+
+            superPoder2 = (float) (pontosturisticos2 + pib2 + tamanho2 + densidade2 + pibpercapt2);
+            printf("O SuperPoder da segunda carta é: %.2f \n", superPoder2);
+
+
+            printf("Comparação de cartas: Carta 1 venceu\n");
+
+
+
+
+
+
+
+
+
 
 
         
