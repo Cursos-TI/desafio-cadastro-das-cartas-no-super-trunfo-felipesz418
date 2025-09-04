@@ -2,16 +2,36 @@
        
      int main(){
 
+
+        //variaveis para guardar os valores das cartas
         char estado = 'S', estado2 = 'S';
         char codigo[20] = "Codigo", codigo2[20] = "Codigo";
         char nomecidade[28] = "Cidade", nomecidade2[28] = "Cidade";
-        int habitantes, habitantes2;
+        unsigned long int habitantes, habitantes2;
         float tamanho, tamanho2;
         float pib, pib2;
         int pontosturisticos, pontosturisticos2;
         float densidade, densidade2;
         float pibpercapt, pibpercapt2;
         float superPoder, superPoder2;
+
+
+       //variaveis para guardar o valor da comparação de cartas
+        int cartaVenceuH;
+        int cartaVenceuP;
+        int cartaVenceuT;
+        int cartaVenceuS;
+        int cartaVenceuA;
+        int cartaVenceuD;
+        int cartaVenceuPP;
+
+        
+
+        
+
+
+
+
 
 
 
@@ -31,7 +51,7 @@
         scanf(" %[^\n]", nomecidade2);
 
         printf("Insira a população para as duas cartas: \n");
-        scanf("%d %d", &habitantes, &habitantes2);
+        scanf("%lu %lu", &habitantes, &habitantes2);
 
         printf("Insira a área da cidade para as duas cartas: \n");
         scanf("%f %f", &tamanho, &tamanho2);
@@ -61,7 +81,7 @@
 
             printf("Nome da cidade: %s \n", nomecidade);
 
-            printf("População: %d \n", habitantes);
+            printf("População: %lu \n", habitantes);
 
             printf("Área: %.2f \n", tamanho);
 
@@ -85,7 +105,7 @@
 
             printf("Nome da cidade: %s \n", nomecidade2);
 
-            printf("População: %d \n", habitantes2);
+            printf("População: %lu \n", habitantes2);
 
             printf("Área: %.2f \n", tamanho2);
 
@@ -105,20 +125,41 @@
             superPoder2 = (float) (pontosturisticos2 + pib2 + tamanho2 + densidade2 + pibpercapt2);
             printf("O SuperPoder da segunda carta é: %.2f \n", superPoder2);
 
-
-            printf("Comparação de cartas: Carta 1 venceu\n");
-
-
-
-
-
-
-
-
-
-
+            //operadores relacionais para compração de carta
+            cartaVenceuH = habitantes > habitantes2;
+            cartaVenceuA = tamanho > tamanho2;
+            cartaVenceuP = pib > pib2;
+            cartaVenceuT = pontosturisticos > pontosturisticos2;
+            cartaVenceuD = densidade < densidade2;
+            cartaVenceuPP = pibpercapt > pibpercapt2;
+            cartaVenceuS = superPoder > superPoder2;
 
         
-       
+            //resutado da comparação de cartas
+            printf("**Comparação de cartas** \n");
+            printf("População: Carta %d Venceu\n", cartaVenceuH);
+            printf("Área: Carta %d Venceu\n", cartaVenceuA);
+            printf("PIB: Carta %d Venceu\n", cartaVenceuP);
+            printf("Pontos Turísticos: Carta %d Venceu\n", cartaVenceuT);
+            printf("Densidade Populacional: Carta %d Venceu\n", cartaVenceuD);
+            printf("PIB per Capita: Carta %d Venceu\n", cartaVenceuPP);
+            printf("Super Poder: Carta %d Venceu\n", cartaVenceuS);
+
+
+            return 0;
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+    
 
       }
