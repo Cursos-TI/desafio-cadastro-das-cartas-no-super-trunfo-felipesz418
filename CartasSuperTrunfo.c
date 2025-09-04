@@ -27,14 +27,7 @@
 
         
 
-        
-
-
-
-
-
-
-
+    
         //inserção de dados para as duas cartas
        
 
